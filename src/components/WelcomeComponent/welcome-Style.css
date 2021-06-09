@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+.title-welcome {
+  color: #fff;
+  margin-left: 250px;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 700;
+  font: italic bold 100px Georgia, Serif;
+  text-shadow: -4px 3px 0 #d4dce0, -14px 7px 0 #0a0e27;
+}
+.currentDay {
+  color: #fff;
+  margin-top: 100px;
+  margin-left: 300px;
+  text-align: center;
+  font-weight: 500;
+  font: italic bold 70px Georgia, Serif;
+  text-shadow: -4px 3px 0 #d4dce0, -14px 7px 0 #0a0e27;
+}
+
+.container-welcome {
+  background-image: url(../../img/geeks-2894621.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+/* Button */
+.container-button {
+  margin-left: 10%;
+  margin-top: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+span {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: 'Montserrat', sans-serif;
+}
+span a:before,
+span a:after {
+  position: absolute;
+  content: 'Entrar';
+  height: 60px;
+  width: 198px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+span a:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+  background: #fff;
+}
+span a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}

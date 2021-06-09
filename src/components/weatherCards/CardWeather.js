@@ -8,7 +8,7 @@ function CardWeather(props) {
   let currentTime = new Date();
   let fecha = currentTime.toDateString();
 
-  const { ciudad, setCiudad } = useContext(DataContext);
+  const { setCiudad } = useContext(DataContext);
   var newArrayCity = [];
   const deleteCity = () => {
     setCiudad((preCiudad) => {

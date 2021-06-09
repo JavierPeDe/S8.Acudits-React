@@ -41,7 +41,7 @@ export default function CardsWeather() {
           type="text"
           name="newCity"
         />
-        <button type="submit" class="btn btn-primary m-1">Buscar</button>
+        <button type="submit" className="btn btn-primary m-1">Buscar</button>
       </form>
       <div className="column">{cardWeatherCity}</div>
     </div>

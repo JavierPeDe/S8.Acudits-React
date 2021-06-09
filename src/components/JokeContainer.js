@@ -11,10 +11,13 @@ function JokeContainer() {
     });
   };
   return (
-    <div className="JokeContainerCss container">
-      <h1 className='JokeTitle'>Preparat per riure? 🤣</h1>
+    <div className="JokeContainerCss ">
+      <h1 className="JokeTitle">Preparat per riure? 🤣</h1>
       <p className="Joke">{apiJoke}</p>
-      <button className="btn btn-outline-info btn-lg btn-block w-50" onClick={onClickChange}>
+      <button
+        className="btn btn-outline-info btn-lg btn-block w-50"
+        onClick={onClickChange}
+      >
         Següent acudit
       </button>
     </div>

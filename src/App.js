@@ -1,16 +1,26 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { DataProvider } from './context/DataContext';
-import Selector from './components/Selector';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import WelcomeComponent from './components/WelcomeComponent/WelcomeComponent';
+import MainContainer from './components/MainContainer';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <DataProvider>
-        <Selector />
-      </DataProvider>
-    </div>
+    <Router>
+      <div> <DataProvider>
+        <Switch>
+          <Route path="/home">
+            <MainContainer />
+          </Route>
+          <Route path="/">
+            <WelcomeComponent />
+          </Route>
+        </Switch>  </DataProvider>
+      </div>
+    </Router>
+
   );
-}
+};
 
 export default App;

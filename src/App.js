@@ -8,18 +8,20 @@ import MainContainer from './components/MainContainer';
 const App = () => {
   return (
     <Router>
-      <div> <DataProvider>
-        <Switch>
-          <Route path="/home">
-            <MainContainer />
-          </Route>
-          <Route path="/">
-            <WelcomeComponent />
-          </Route>
-        </Switch>  </DataProvider>
+      <div>
+        {' '}
+        <DataProvider>
+          <Switch>
+            <Route path="/home">
+              <MainContainer />
+            </Route>
+            <Route path="/">
+              <WelcomeComponent />
+            </Route>
+          </Switch>{' '}
+        </DataProvider>
       </div>
     </Router>
-
   );
 };
 

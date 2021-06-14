@@ -10,7 +10,7 @@ export default function CardsWeather() {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     setCiudad((preCiudad) => [...preCiudad, evt.target.newCity.value]);
-    evt.target.newCity.value=''
+    evt.target.newCity.value = '';
   };
 
   useEffect(() => {
@@ -34,14 +34,16 @@ export default function CardsWeather() {
 
   return (
     <div className="container ">
-      <h2 className='titul-Weather'> Vols saber quin temps farà avui?</h2>
-      <form  className="container-form" onSubmit={handleSubmit}>
+      <h2 className="titul-Weather"> Vols saber quin temps farà avui?</h2>
+      <form className="container-form" onSubmit={handleSubmit}>
         <input
           placeholder="Busca una nova ciutat..."
           type="text"
           name="newCity"
         />
-        <button type="submit" className="btn btn-primary m-1">Buscar</button>
+        <button type="submit" className="btn btn-primary m-1">
+          Buscar
+        </button>
       </form>
       <div className="column">{cardWeatherCity}</div>
     </div>

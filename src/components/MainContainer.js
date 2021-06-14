@@ -8,11 +8,8 @@ function MainContainer() {
       <div className="container">
         <JokeContainer />
       </div>
-      
-        <CardsWeather />
-     
+      <CardsWeather />
     </div>
   );
 }
-
 export default MainContainer;

@@ -56,3 +56,16 @@
   margin-top: 30px;
   text-align: center;
 }
+
+.main-container-picture{
+  background-image: url(./img/coffee-dib.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        overflow: scroll;
+        height: 100vh;
+}

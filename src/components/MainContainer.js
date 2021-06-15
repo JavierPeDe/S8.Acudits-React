@@ -4,7 +4,7 @@ import JokeContainer from './JokeContainer';
 
 function MainContainer() {
   return (
-    <div>
+    <div className='main-container-picture'>
       <div className="container">
         <JokeContainer />
       </div>

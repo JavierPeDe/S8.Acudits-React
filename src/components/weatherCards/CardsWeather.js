@@ -16,7 +16,6 @@ export default function CardsWeather() {
   useEffect(() => {
     setCardWeatherCity(() => []);
     async function callApiWeather() {
-      console.log('ciudades a buscar ' + ciudad);
       ciudad.map(async (city) => {
         let APIkey = 'c2a837960ca2ff0c9275e80b7751ee58';
         let urlTiempo = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}`;
